@@ -1,7 +1,3 @@
-; Control+Shift+Win+F4
-^+#F4:: AddSongToMyLibrary()
-
-
 AddSongToMyLibrary() {
   spotify := "ahk_class Chrome_WidgetWin_0"
   IfWinExist %spotify%
@@ -24,7 +20,7 @@ AddSongToMyLibrary() {
     topLeftY := spotifyHeight - 90
     bottomRightX := 250
     bottomRightY := spotifyHeight
-    saveToYourLibraryIcon = %A_WorkingDir%\SaveToYourLibraryIcon.png
+    saveToYourLibraryIcon = %A_WorkingDir%\Images\SaveToYourLibraryIcon.png
 
     ImageSearch FoundX, FoundY, topLeftX, topLeftY, bottomRightX, bottomRightY, %saveToYourLibraryIcon%
     If (ErrorLevel = 0) {
