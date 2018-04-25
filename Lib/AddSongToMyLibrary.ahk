@@ -1,3 +1,4 @@
+; Based on: https://superuser.com/a/1263857/268826
 AddSongToMyLibrary() {
   spotify := "ahk_class Chrome_WidgetWin_0"
   IfWinExist %spotify%
